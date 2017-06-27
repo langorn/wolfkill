@@ -1,0 +1,33 @@
+<div style="float:right;width:200px;height:20px;">
+
+  <button id="nextBtn" onclick="nightFall()" style="width:200px;height:20px;">Next</button>
+  <button id="loadJS" onclick="loadJS()">LOAD JS</button>
+</div>
+<script>
+
+var players = {{{csv.players}}};//['wolf','villager','villager','villager','wolf','villager','villager','hunter','wolf'];
+
+var deadNightList ={{{csv.night}}};
+var deadDayList ={{{csv.day}}};
+var savePerson = {{{csv.savePerson}}};
+var sheriffList = {{{csv.sheriffList}}};
+var lovers = {{{csv.lovers}}};
+var prophet = {{{csv.prophet}}};
+var protect = {{{csv.protect}}};
+var fox = {{{csv.fox}}};
+var whitewolf = {{{csv.whitewolf}}};
+var bear = {{{csv.bear}}};
+
+
+
+function loadJS(){
+
+  var j = document.createElement('script');
+  j.type = 'text/javascript';
+  // j.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js';
+  j.src ='/static/javascripts/wolf.js';
+  document.getElementsByTagName('head')[0].appendChild(j);
+
+
+}
+</script>

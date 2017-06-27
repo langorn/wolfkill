@@ -1,0 +1,21 @@
+{
+  "name": "canvaspic",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Mark <raynor.tags@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/langorn/wolfkill",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mustache.js": "mustache#^2.3.0",
+    "semantic": "semantic-ui#^2.2.10"
+  }
+}
